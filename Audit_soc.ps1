@@ -211,7 +211,7 @@ Get-Service -ErrorAction SilentlyContinue |
     Where-Object { $_.Name -match "vpn|cisco|pulse|globalprotect|ivpn|nordvpn|expressvpn|openvpn|wireguard" } |
     Select-Object Name, DisplayName, Status, StartType | Format-Table -AutoSize
 
-SubSection "Services avec chemin non quoté (PrivEsc local)"
+SubSection "Services avec chemin non quote (PrivEsc local)"
 Get-WmiObject Win32_Service | Where-Object {
     $_.PathName -notmatch '^"' -and $_.PathName -match ' '} | 
     Select-Object Name, PathName, StartMode
