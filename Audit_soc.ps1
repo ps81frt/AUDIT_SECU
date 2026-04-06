@@ -1,7 +1,7 @@
 $script = @'
 # ============================================================
 # AUDIT SECURITE WINDOWS - NIVEAU SOC/DFIR
-# Version : v2 - Corrigee & Durcie
+# Version : v2 
 # ============================================================
 
 function Section($title) {
